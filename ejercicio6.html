@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Caja con Slider</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .caja {
+            background-color: #dff6ff;
+            border: 3px solid #2980b9;
+            border-radius: 15px;
+            padding: 40px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        }
+
+        .caja h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="caja">
+        <h2>Ajusta el valor</h2>
+        <input type="range" min="0" max="100" value="50">
+        <p>Este es un control deslizante para personalizar valores.</p>
+    </div>
+
+</body>
+</html>

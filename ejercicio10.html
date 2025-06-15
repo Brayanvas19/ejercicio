@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Biografía</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos generales */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Navegación */
+        nav {
+            background-color: #34495e;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #1abc9c;
+        }
+
+        /* Contenedor principal */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        main {
+            flex: 3;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        aside {
+            flex: 1;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            main, aside {
+                margin: 0 0 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Bienvenido a Mi Biografía</h1>
+        <p>Conoce más sobre mí</p>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#hobbies">Pasatiempos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal y barra lateral -->
+    <div class="container">
+        <main>
+            <section id="biografia">
+                <h2>Sobre mí</h2>
+                <p>Mi nombre es Brayan Vasconez. Soy estudiante apasionado por la tecnología y el diseño web. Me encanta aprender cosas nuevas, especialmente en programación, diseño gráfico y desarrollo de aplicaciones web modernas.</p>
+            </section>
+
+            <section id="hobbies">
+                <h2>Pasatiempos</h2>
+                <ul>
+                    <li>Leer libros de desarrollo personal y tecnología</li>
+                    <li>Viajar y descubrir nuevas culturas</li>
+                    <li>Diseñar sitios web y practicar programación</li>
+                </ul>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p>Puedes contactarme por correo: <strong>estalinher1995@gmail.com</strong></p>
+            </section>
+        </main>
+
+        <!-- Barra lateral -->
+        <aside>
+            <h3>Redes Sociales</h3>
+            <ul>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+            <br>
+            <h3>Frase favorita</h3>
+            <p>"El éxito es la suma de pequeños esfuerzos repetidos cada día."</p>
+        </aside>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Brayan Vasconez - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
